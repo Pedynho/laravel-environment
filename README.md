@@ -35,4 +35,4 @@
         ```bash
 		$ ../start.sh
 		$ exit
-	- Go to "http://localhos:8100" and have a fun.
+	- Go to "http://localhost:8100" and have a fun.

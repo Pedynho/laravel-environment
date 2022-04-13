@@ -9,7 +9,7 @@ services:
         build: 
             context: ./php
             dockerfile: Dockerfile
-        image: laravel8-php-fpm-80
+        image: laravel8-php-fpm-7.4.28
         container_name: app
         restart: unless-stopped
         tty: true
@@ -35,6 +35,8 @@ services:
             SERVICE_NAME: mysql
         networks:
             - app-network
+        volumes:
+            - ./mysql:/var/lib/mysql
     
     nginx:
         image: nginx:1.19.8-alpine
